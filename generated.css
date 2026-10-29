@@ -1,0 +1,443 @@
+@font-face{font-display:block;font-family:KaTeX_AMS;font-style:normal;font-weight:400;src:url("assets/0cdd387c9590a1a9f9794560.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Caligraphic;font-style:normal;font-weight:700;src:url("assets/de7701e42cf1f4cf0b766c03.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Caligraphic;font-style:normal;font-weight:400;src:url("assets/5d53e70ad607c2352162dec9.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Fraktur;font-style:normal;font-weight:700;src:url("assets/74444efd593c005e3f4573b4.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Fraktur;font-style:normal;font-weight:400;src:url("assets/51814d270d06ff0255dba079.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Main;font-style:normal;font-weight:700;src:url("assets/0f60d1b897938ec918c8ce07.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Main;font-style:italic;font-weight:700;src:url("assets/99cd42a3c072d918f2f44984.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Main;font-style:italic;font-weight:400;src:url("assets/97479ca6cce906abc961ecac.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Main;font-style:normal;font-weight:400;src:url("assets/c2342cd8b869e01752a9321d.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Math;font-style:italic;font-weight:700;src:url("assets/dc47344dbb6cb5b655c8460d.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Math;font-style:italic;font-weight:400;src:url("assets/7af58c5ec8f132a2ddde9027.woff2") format("woff2")}@font-face{font-display:block;font-family:"KaTeX_SansSerif";font-style:normal;font-weight:700;src:url("assets/e99ae51144bf1232efcc1bfe.woff2") format("woff2")}@font-face{font-display:block;font-family:"KaTeX_SansSerif";font-style:italic;font-weight:400;src:url("assets/00b26ac825e2095056396e05.woff2") format("woff2")}@font-face{font-display:block;font-family:"KaTeX_SansSerif";font-style:normal;font-weight:400;src:url("assets/68e8c73ef42afd3ccec58bf0.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Script;font-style:normal;font-weight:400;src:url("assets/036d4e95149b69ff9bcc0cd5.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Size1;font-style:normal;font-weight:400;src:url("assets/6b47c40166b6dbe21a5dfca7.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Size2;font-style:normal;font-weight:400;src:url("assets/d04c54219f9eaec6d4d4fd42.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Size3;font-style:normal;font-weight:400;src:url("assets/73d591271b1604960cb10bb9.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Size4;font-style:normal;font-weight:400;src:url("assets/a4af7d414440a1c1790825cf.woff2") format("woff2")}@font-face{font-display:block;font-family:KaTeX_Typewriter;font-style:normal;font-weight:400;src:url("assets/71d517d67827787cfabdf186.woff2") format("woff2")}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;position:relative;text-indent:0;text-rendering:auto}.katex *{-ms-high-contrast-adjust:none!important;border-color:currentColor}.katex .katex-version:after{content:"0.16.47"}.katex .katex-mathml{border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;overflow:hidden;padding:0;position:absolute;width:1px}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:-webkit-min-content;width:-moz-min-content;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-style:italic;font-weight:700}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathboldfrak,.katex .textboldfrak{font-family:KaTeX_Fraktur;font-weight:700}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .mathsfit,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{border-collapse:collapse;display:inline-table;table-layout:fixed}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;position:relative;vertical-align:bottom}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;font-size:1px;min-width:2px;vertical-align:bottom;width:2px}.katex .vbox{align-items:baseline;display:inline-flex;flex-direction:column}.katex .hbox{width:100%}.katex .hbox,.katex .thinbox{display:inline-flex;flex-direction:row}.katex .thinbox{max-width:0;width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{border-bottom-style:solid;display:inline-block;width:100%}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .smash{display:inline;line-height:0}.katex .clap,.katex .llap,.katex .rlap{position:relative;width:0}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{border:0 solid;display:inline-block;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{border-bottom-style:solid;display:inline-block;width:100%}.katex .hdashline{border-bottom-style:dashed;display:inline-block;width:100%}.katex .sqrt>.root{margin-left:.2777777778em;margin-right:-.5555555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.1666666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.3333333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.6666666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.4566666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.1466666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.7142857143em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.8571428571em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.1428571429em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.2857142857em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.4285714286em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.7142857143em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.0571428571em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.4685714286em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.9628571429em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.5542857143em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.5555555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.6666666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.7777777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.8888888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.1111111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.3333333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.3044444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.7644444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.4166666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.5833333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.6666666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.7283333333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.0733333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.3472222222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.4166666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.4861111111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.5555555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.6944444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.4402777778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.7277777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.2893518519em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.3472222222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.4050925926em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.462962963em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.5208333333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.6944444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.2002314815em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.4398148148em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.2410800386em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.2892960463em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.337512054em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.3857280617em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.4339440694em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.4821600771em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.5785920926em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.6943105111em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.8331726133em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.1996142719em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.2009646302em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.2411575563em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.2813504823em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.3215434084em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.3617363344em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.4019292605em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.4823151125em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.578778135em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.6945337621em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.8336012862em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .accent>.vlist-t,.katex .op-limits>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{fill:currentColor;stroke:currentColor;display:block;height:inherit;position:absolute;width:100%}.katex svg path{stroke:none}.katex svg{fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1}.katex img{border-style:none;max-height:none;max-width:none;min-height:0;min-width:0}.katex .stretchy{display:block;overflow:hidden;position:relative;width:100%}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{overflow:hidden;position:relative;width:100%}.katex .halfarrow-left{left:0;overflow:hidden;position:absolute;width:50.2%}.katex .halfarrow-right{overflow:hidden;position:absolute;right:0;width:50.2%}.katex .brace-left{left:0;overflow:hidden;position:absolute;width:25.1%}.katex .brace-center{left:25%;overflow:hidden;position:absolute;width:50%}.katex .brace-right{overflow:hidden;position:absolute;right:0;width:25.1%}.katex .x-arrow-pad{padding:0 .5em}.katex .cd-arrow-pad{padding:0 .55556em 0 .27778em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{border:.04em solid;box-sizing:border-box}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex .angl{border-right:.049em solid;border-top:.049em solid;box-sizing:border-box;margin-right:.03889em}.katex .anglpad{padding:0 .03889em}.katex .eqn-num:before{content:"(" counter(katexEqnNo) ")";counter-increment:katexEqnNo}.katex .mml-eqn-num:before{content:"(" counter(mmlEqnNo) ")";counter-increment:mmlEqnNo}.katex .mtr-glue{width:50%}.katex .cd-vert-arrow{display:inline-block;position:relative}.katex .cd-label-left{display:inline-block;position:absolute;right:calc(50% + .3em);text-align:left}.katex .cd-label-right{display:inline-block;left:calc(50% + .3em);position:absolute;text-align:right}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{padding-left:2em;text-align:left}body{counter-reset:katexEqnNo mmlEqnNo}
+
+
+        :root {
+            --r-heading-font-size: 1.6em;
+            --r-main-font-size: 22px;
+            --lecture-accent: #2a5699;
+        }
+
+        .reveal {
+            font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+        }
+
+        .editor-theme-high_contrast .reveal {
+            --r-background-color: #000;
+            --r-main-color: #fff;
+            --r-heading-color: #fff;
+            --r-link-color: #80bfff;
+        }
+
+        .editor-theme-high_contrast .reveal .slide-title {
+            border-bottom-color: currentColor;
+        }
+
+        .editor-theme-high_contrast .reveal h1,
+        .editor-theme-high_contrast .reveal h2,
+        .editor-theme-high_contrast .reveal h3,
+        .editor-theme-high_contrast .reveal h4 {
+            color: #fff;
+        }
+
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            color: var(--lecture-accent);
+            font-weight: 600;
+            text-transform: none;
+        }
+
+        .reveal section {
+            text-align: left;
+        }
+
+        .reveal .slides section {
+            overflow: auto;
+            max-height: 100%;
+        }
+
+        .reveal .slide-element {
+            min-width: 0;
+        }
+
+        .reveal .slide-layout-grid {
+            box-sizing: border-box;
+            display: grid;
+            gap: 24px;
+            width: 100%;
+            align-items: start;
+        }
+
+        .reveal .slide-layout-grid.ratio-40-60 {
+            grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+        }
+
+        .reveal .slide-layout-grid.ratio-50-50 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .reveal .slide-layout-grid.ratio-60-40 {
+            grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+        }
+
+        .reveal .layout-region {
+            box-sizing: border-box;
+            min-width: 0;
+        }
+
+        .reveal .layout-media-left .slide-layout-grid {
+            grid-template-areas: "media content";
+        }
+
+        .reveal .layout-media-right .slide-layout-grid {
+            grid-template-areas: "content media";
+        }
+
+        .reveal .layout-media-left .layout-region-media,
+        .reveal .layout-media-right .layout-region-media {
+            grid-area: media;
+        }
+
+        .reveal .layout-media-left .layout-region-content,
+        .reveal .layout-media-right .layout-region-content {
+            grid-area: content;
+        }
+
+        .reveal .layout-full_media .layout-region-full {
+            width: 100%;
+        }
+
+        .reveal .layout-section_title .section-title-content {
+            box-sizing: border-box;
+            display: flex;
+            min-height: 600px;
+            padding: 5% 8%;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .reveal .layout-section_title .slide-title {
+            border-bottom: 0;
+            font-size: 2.2em;
+            margin-bottom: 24px;
+        }
+
+        .reveal .layout-section_title .layout-region-section {
+            font-size: 1.1em;
+        }
+
+        .reveal .slide-title {
+            margin: 0 0 18px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #dbe4f3;
+        }
+
+        .reveal .slides section > *:last-child:not(aside) {
+            padding-bottom: 20px;
+        }
+
+        .reveal .slide-number {
+            font-size: 14px;
+        }
+
+        .theorem-box {
+            background: #e8f0fe;
+            border-left: 4px solid var(--lecture-accent);
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .definition-box {
+            background: #fef7e0;
+            border-left: 4px solid #f9a825;
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .example-box {
+            background: #e8f5e9;
+            border-left: 4px solid #43a047;
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .proof-box {
+            background: #f3e5f5;
+            border-left: 4px solid #8e24aa;
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .note-box {
+            background: #f0f4f8;
+            border-left: 4px solid #607d8b;
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .proposition-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .problem-set-example {
+            background: #e8eaf6;
+            border-left: 4px solid #3f51b5;
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .theorem-box,
+        .definition-box,
+        .example-box,
+        .proof-box,
+        .note-box,
+        .proposition-box,
+        .problem-set-example,
+        .figure-description-box,
+        .figure-box,
+        .table-description-box {
+            color: #172033;
+        }
+
+        .figure-description-box {
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid #9e9e9e;
+            padding: 12px 16px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .figure-box {
+            background: #f7f9fc;
+            border-left: 4px solid var(--lecture-accent);
+            padding: 14px 18px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .textbook-figure {
+            margin: 10px auto 16px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .figure-media-frame {
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .figure-media-frame.has-media-crop {
+            position: relative;
+        }
+
+        .figure-media-frame.has-media-crop img {
+            transform-origin: top left;
+        }
+
+        .textbook-figure img {
+            display: block;
+            max-width: 100%;
+            width: auto;
+            max-height: 470px;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+
+        .figure-media-frame.image-fill {
+            height: 400px;
+        }
+
+        .figure-media-frame.image-fill img {
+            width: 100%;
+            height: 100%;
+            max-height: none;
+            object-fit: cover;
+        }
+
+        .layout-full_media .figure-media-frame.image-fill {
+            height: 520px;
+        }
+
+        .layout-full_media .figure-media-frame.image-fit img {
+            max-height: 520px;
+        }
+
+        .layout-media-left .figure-media-frame.image-fill,
+        .layout-media-right .figure-media-frame.image-fill {
+            height: 460px;
+        }
+
+        .textbook-figure figcaption {
+            margin: 8px auto 0;
+            max-width: 92%;
+            color: #475569;
+            font-size: 0.72em;
+            line-height: 1.25;
+            text-align: center;
+        }
+
+        .demo-container {
+            width: 100%;
+            height: 450px;
+            margin: 10px auto;
+        }
+
+        .reveal .katex-display {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 6px;
+        }
+
+        .reveal .katex-display > .katex {
+            text-align: left;
+        }
+
+        .reveal .katex-display {
+            margin: 12px 0;
+        }
+
+        .reveal .fragment {
+            margin-top: 8px;
+        }
+
+        section p {
+            line-height: 1.5;
+        }
+
+        ul, ol {
+            margin-left: 1.2em;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .reveal .bullet-lead {
+            margin: 0 0 12px;
+            color: #334155;
+            font-weight: 600;
+        }
+
+        .reveal .lecture-bullets {
+            margin: 8px 0 8px 1.15em;
+            padding-left: 0.55em;
+        }
+
+        .reveal .lecture-bullets li {
+            margin-bottom: 12px;
+            line-height: 1.38;
+        }
+
+        .table-wrapper {
+            box-sizing: border-box;
+            width: 100%;
+            max-height: 500px;
+            margin: 10px 0;
+            overflow: auto;
+            border: 1px solid #d7dee8;
+            border-radius: 4px;
+        }
+
+        .table-wrapper table {
+            font-size: 0.85em;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+
+        .table-wrapper caption {
+            padding: 8px 10px;
+            color: #334155;
+            background: #f8fafc;
+            font-weight: 600;
+            text-align: left;
+            caption-side: top;
+        }
+
+        .table-wrapper th, .table-wrapper td {
+            padding: 6px 10px;
+            border: 1px solid #ccc;
+            vertical-align: top;
+        }
+
+        .table-wrapper th {
+            background: var(--lecture-accent);
+            color: white;
+        }
+
+        .table-wrapper .align-left {
+            text-align: left;
+        }
+
+        .table-wrapper .align-center {
+            text-align: center;
+        }
+
+        .table-wrapper .align-right {
+            text-align: right;
+        }
+
+        .reveal .table-fallback {
+            box-sizing: border-box;
+            width: 100%;
+            max-height: 500px;
+            margin: 10px 0;
+            padding: 12px 14px;
+            overflow: auto;
+            white-space: pre;
+            font-size: 0.58em;
+            line-height: 1.35;
+            background: #f8fafc;
+            color: #1e293b;
+            border: 1px solid #d7dee8;
+            border-radius: 4px;
+        }
+
+        details {
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px 12px;
+            background: #fafafa;
+        }
+
+        details summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--lecture-accent);
+        }
+
+        details[open] {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        details > *:not(summary) {
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+    
+
+html,body{margin:0;padding:0;min-height:100%;height:auto;background:#fff;color:#162d3d}
+body{font:24px/1.5 Arial,"Helvetica Neue",sans-serif;overflow-x:hidden}
+*{box-sizing:border-box}
+.reveal{font-size:24px;line-height:1.5;width:100%;height:auto;min-height:100%;overflow:visible}
+.reveal .slides{position:static;width:100%;height:auto;margin:0;padding:0;perspective:none;transform:none;text-align:left}
+.reveal .slides>section{display:block;position:relative;inset:auto;opacity:1;visibility:visible;transform:none;width:100%;height:auto;min-height:0;max-height:none;margin:0;padding:28px;overflow:visible}
+.reveal .slides>section+section{border-top:3px solid #c9d7e1}
+.reveal .slides section h1,.reveal .slides section h2{font-size:32px;line-height:1.25}
+.reveal .slides section h3,.reveal .slides section h4{font-size:28px;line-height:1.3}
+.reveal p,.reveal li,.reveal pre,.reveal code,.reveal td,.reveal th,.reveal figcaption{font-size:24px}
+.reveal p{margin:0 0 1em;overflow-wrap:break-word}
+.reveal pre,.reveal .katex-display{max-width:100%;overflow-x:auto;overflow-y:hidden}
+.reveal pre{white-space:pre;line-height:1.45}
+.reveal img{max-width:100%;height:auto}
+.reveal table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse}
+.reveal th,.reveal td{padding:.35em .5em;border:1px solid #b9c8d4}
+.reveal .fragment{opacity:1;visibility:visible;transform:none}
+.reveal aside.notes,.reveal .speaker-notes{display:none}
+.reveal .layout-section_title .section-title-content{min-height:0;padding:24px 0}
+@media(max-width:720px){.reveal .slides>section{padding:20px}.reveal .slide-layout-grid{grid-template-columns:minmax(0,1fr)!important;grid-template-areas:"media" "content"}.reveal .slide-title{font-size:30px}}
