@@ -105,6 +105,9 @@ body,.deck{background:var(--paper)}.deck{border-top:7px solid var(--stage-accent
 .v13-layout-panel{width:100%}.v13-layout-panel .panel-body{padding:24px;min-height:0;justify-content:flex-start}.v13-layout-panel svg.v13-doclayout-page{display:block;width:100%;max-width:980px;height:auto;max-height:none;margin:0 auto}.v13-layout-panel .panel-head{font-size:24px}@media(max-width:720px){.v13-layout-panel .panel-body{padding:8px}}
 .public-textbox{font-size:28px;line-height:1.4;margin:12px 0;min-width:0;overflow-wrap:anywhere} [hidden]{display:none!important}
 .deck {
+    --nav-top: max(10px, env(safe-area-inset-top));
+    --nav-gutter: max(24px, calc((100% - 1312px) / 2));
+    --nav-header-height: 68px;
     --nav-ink: #111827;
     --nav-muted: #586375;
     --nav-line: #d1daea;
@@ -112,6 +115,11 @@ body,.deck{background:var(--paper)}.deck{border-top:7px solid var(--stage-accent
     --nav-glass: linear-gradient(165deg, rgba(251, 252, 255, .98), rgba(231, 238, 251, .96));
     --nav-control: linear-gradient(#fff, #f7f9fd);
     --nav-primary: linear-gradient(#1675ff 0%, #0855ff 44%, #003be7 100%);
+}
+
+.deck,
+.deck:fullscreen {
+    padding-block-start: calc(var(--nav-top) + var(--nav-header-height) + 24px);
 }
 
 .topbar,
@@ -124,12 +132,15 @@ body,.deck{background:var(--paper)}.deck{border-top:7px solid var(--stage-accent
 }
 
 .topbar {
+    position: fixed;
+    inset: var(--nav-top) var(--nav-gutter) auto;
+    z-index: 21;
     display: grid;
     grid-template-columns: max-content minmax(0, 1fr) max-content minmax(0, 1.6fr);
-    align-self: center;
-    width: min(calc(100% + 32px), 1312px);
+    min-height: var(--nav-header-height);
     padding: 10px 20px;
     gap: 20px;
+    backdrop-filter: blur(12px);
 }
 
 .topbar .brand {
@@ -219,7 +230,7 @@ body,.deck{background:var(--paper)}.deck{border-top:7px solid var(--stage-accent
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    inset: auto max(24px, calc((100% - 1312px) / 2)) 10px;
+    inset: auto var(--nav-gutter) 10px;
     min-height: 0;
     padding: 10px 20px;
     gap: 16px;
@@ -276,9 +287,13 @@ body,.deck{background:var(--paper)}.deck{border-top:7px solid var(--stage-accent
 }
 
 @media (max-width: 760px) {
+    .deck {
+        --nav-gutter: 10px;
+        --nav-header-height: 160px;
+    }
+
     .topbar {
         grid-template-columns: 1fr;
-        width: 100%;
         padding: 12px;
         gap: 10px;
         text-align: center;
@@ -288,7 +303,7 @@ body,.deck{background:var(--paper)}.deck{border-top:7px solid var(--stage-accent
     .topbar #slide-select { max-width: none; }
     .bottom {
         grid-template-columns: minmax(0, 1fr) auto;
-        inset: auto 10px max(8px, env(safe-area-inset-bottom));
+        inset: auto var(--nav-gutter) max(8px, env(safe-area-inset-bottom));
         padding: 9px 11px 4px;
         gap: 2px 7px;
         border-radius: 16px;
