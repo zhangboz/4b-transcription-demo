@@ -1,4 +1,4 @@
-# The 4B Experiment
+# Lecture Slide Generation Workflow
 
 An engineering case study in textbook transcription with a local 4B model and an 8K context window.
 

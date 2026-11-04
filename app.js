@@ -25,7 +25,6 @@ function show(s,b=0,hash=true){
  document.getElementById('slide-title').textContent=beat.title??slide.question;document.getElementById('slide-answer').textContent=beat.answer??slide.answer;
  root.dataset.presentation=beat.presentation||'';document.querySelector('.heading').hidden=false;document.getElementById('slide-title').hidden=beat.title==='';document.getElementById('slide-answer').hidden=!(beat.answer??slide.answer);document.querySelector('.flow').hidden=beat.showFlow===false;document.querySelector('.flow').classList.toggle('retry-flow',!!(beat.flow||slide.flow).retry);
  document.getElementById('slide-counter').textContent=`Slide ${slideIndex+1} / ${slides.length}`;document.getElementById('beat-counter').textContent=`Step ${beatIndex+1} / ${slide.beats.length}`;
- document.getElementById('slide-select').value=String(slideIndex);
  stage.innerHTML=beat.publicHTML;
  stage.classList.remove('scene-enter');void stage.offsetWidth;stage.classList.add('scene-enter');hydrate();drawFlow(beat.flow||slide.flow);document.fonts.ready.then(circleMatrixCells);
  document.getElementById('prev').disabled=slideIndex===0&&beatIndex===0;document.getElementById('next').disabled=slideIndex===slides.length-1&&beatIndex===slide.beats.length-1;
@@ -38,11 +37,9 @@ function show(s,b=0,hash=true){
 function next(){if(beatIndex<slides[slideIndex].beats.length-1)show(slideIndex,beatIndex+1);else if(slideIndex<slides.length-1)show(slideIndex+1,0);}
 function prev(){if(beatIndex>0)show(slideIndex,beatIndex-1);else if(slideIndex>0)show(slideIndex-1,slides[slideIndex-1].beats.length-1);}
 document.getElementById('next').addEventListener('click',next);document.getElementById('prev').addEventListener('click',prev);
-document.getElementById('slide-select').addEventListener('change',e=>show(Number(e.target.value),0));document.querySelectorAll('[data-jump]').forEach(el=>el.addEventListener('click',()=>show(Number(el.dataset.jump),0)));
+document.querySelectorAll('[data-jump]').forEach(el=>el.addEventListener('click',()=>show(Number(el.dataset.jump),0)));
 document.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||e.target.closest('input,select,textarea,button,summary,a,[contenteditable],[data-scroll-region]'))return;if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();next();}else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();prev();}else if(e.key==='Home'){e.preventDefault();show(0,0);}else if(e.key==='End'){e.preventDefault();show(slides.length-1,slides.at(-1).beats.length-1);}});
 stage.addEventListener('click',e=>{const t=e.target.closest('[data-issue]');if(!t)return;stage.querySelectorAll('[data-issue]').forEach(el=>el.classList.toggle('issue-active',el.dataset.issue===t.dataset.issue));});
-document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await root.requestFullscreen();}catch{document.getElementById('announcer').textContent='Fullscreen is unavailable in this browser. The slideshow remains usable.';}});
-document.addEventListener('fullscreenchange',()=>{const on=!!document.fullscreenElement;document.getElementById('fullscreen').setAttribute('aria-pressed',String(on));document.getElementById('fullscreen').textContent=on?'Exit fullscreen':'Fullscreen';drawFlow(slides[slideIndex].beats[beatIndex].flow||slides[slideIndex].flow);});
 function fromHash(){const m=location.hash.match(/^#slide-(\d+)\/step-(\d+)$/);if(m)show(Number(m[1])-1,Number(m[2])-1,false);else show(0,0,false);}
 window.addEventListener('hashchange',fromHash);window.addEventListener('resize',()=>drawFlow(slides[slideIndex].beats[beatIndex].flow||slides[slideIndex].flow));fromHash();
 
@@ -69,7 +66,6 @@ function circleMatrixCells(){
 window.addEventListener('resize',circleMatrixCells);
 
 stage.addEventListener("scroll",e=>{if(e.target.classList?.contains("math-block"))circleMatrixCells();},true);
-
 
 /* Apply the presentation's already-frozen appearance; no editing or storage. */
 (() => {
