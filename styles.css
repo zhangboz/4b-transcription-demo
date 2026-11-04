@@ -143,6 +143,26 @@ body,.deck{background:var(--paper)}.deck{border-top:7px solid var(--stage-accent
     backdrop-filter: blur(12px);
 }
 
+.topbar .brand-group {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    gap: 12px;
+}
+
+.topbar .github-link {
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    color: var(--nav-ink);
+}
+
+.topbar .github-link svg { width: 28px; height: 28px; }
+.topbar .github-link:hover { background: #dbe6fb; }
+
 .topbar .brand {
     min-width: 0;
     color: var(--nav-ink);
